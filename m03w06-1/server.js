@@ -19,8 +19,6 @@ app.use(morgan('dev'));
 
 // GET /home
 app.get('/home', (request, response) => {
-  // console.log(request.secretMessage);
-
   response.status(201);
 
   response.send('welcome to the home page'); // .write and .end together
@@ -30,13 +28,11 @@ app.get('/home', (request, response) => {
 app.get('/about', (req, res) => {
   res.status(202);
 
-  if (true) {
-    return res.send('here is more info about us');
-  }
+  // if (true) {
+  //   return res.send('here is more info about us');
+  // }
 
   res.send('here is more info about us');
-
-  // res.status(300).send('here is the response');
 });
 
 app.listen(port, () => {
