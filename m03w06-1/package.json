@@ -1,0 +1,19 @@
+{
+  "name": "m03w06-1",
+  "version": "1.0.0",
+  "description": "having fun with http",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "http",
+    "express"
+  ],
+  "author": "Andy",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "morgan": "^1.10.0"
+  }
+}
