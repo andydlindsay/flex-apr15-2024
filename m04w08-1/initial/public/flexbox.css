@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+div {
+  height: 75px;
+  width: 75px;
+  border: 1px solid blue;
+}
+
+main {
+  display: flex; /* turns the element into a flex container (or a flexbox) */
+  flex-direction: row; /* defaults to row */
+  justify-content: space-evenly;
+}

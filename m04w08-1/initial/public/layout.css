@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+/* h2 {
+  font-size: 50px; 
+  color: yellowgreen;
+} */
+
+/* div.my-class {}
+div .my-class {}
+
+p.my-class {}
+h2#welcome {}
+
+nav a {}
+nav > a {} */
+
+h2#hello.welcome {}
+
+/* 0,1,1 */
+h2.content {}
+
+/* 0,0,2 */
+div h2 {
+  color: green;
+}
+
+/* 0,0,1 */
+div {
+  color: blue;
+}
+
+
+p {
+  color: yellow;
+}
+p {
+  color: yellow;
+}
+
+main {
+  border: 2px dotted purple;
+}
+
+main p {
+  color: orange;
+}
+
+.main-heading {
+  font-size: 29px;
+  text-decoration: underline;
+}
+
+#navigation {
+  border: 2px solid brown;
+}
