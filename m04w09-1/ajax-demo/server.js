@@ -13,6 +13,7 @@ app.use(express.static('public'));
 // GET /food-items
 app.get('/food-items', (req, res) => {
   res.json(foodItems);
+  // res.send(foodItems);
 });
 
 // POST /food-items
