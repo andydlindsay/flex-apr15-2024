@@ -1,0 +1,48 @@
+h2 {
+  font-size: 2rem;
+  color: grey;
+  margin: 0 20px;
+  border: rebeccapurple solid 4px;
+}
+
+p {
+  text-decoration: underline;
+  color: grey;
+}
+
+section {
+  font-size: 25px;
+}
+section header {
+  color: lightblue;
+}
+section header h2 {
+  text-decoration: underline;
+}
+section main h3 {
+  font-size: 24px;
+}
+section main p {
+  margin-bottom: 10px;
+}
+
+.heading, .another-class {
+  font-size: 24px;
+  padding: 20px;
+}
+
+.another-class {
+  margin: 40px;
+}
+
+.square {
+  width: 5.4in;
+  height: 10.8in;
+  color: yellow;
+}
+
+.small-square {
+  width: 25px;
+  height: 50px;
+  color: green;
+}

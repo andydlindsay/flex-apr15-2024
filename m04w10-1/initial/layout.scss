@@ -1,0 +1,70 @@
+@import 'variables.scss';
+
+h2 {
+  font-size: $my-font-size;
+  color: $my-var;
+  margin: $custom-margin;
+  border: $border-style;
+}
+
+p {
+  text-decoration: underline;
+  color: $my-var;
+}
+
+// <section>
+//   <header>
+//     <h2>Welcome</h2>
+//   </header>
+//   <main>
+//     <h3>About us</h3>
+//     <p>Contact us</p>
+//   </main>
+// </section>
+
+section {
+  font-size: 25px;
+
+  header {
+    color: lightblue;
+
+    h2 {
+      text-decoration: underline;
+    }
+  }
+
+  main {
+    h3 {
+      font-size: 24px;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.heading {
+  font-size: 24px;
+  padding: 20px;
+}
+
+.another-class {
+  @extend .heading;
+  margin: 40px;
+}
+
+@mixin make-square($dimension, $color) {
+  width: $dimension;
+  height: $dimension * 2;
+  color: $color;
+}
+
+@mixin another{}
+
+.square {
+  @include make-square(5.4in, yellow);
+}
+
+.small-square {
+  @include make-square(25px, green);
+}
