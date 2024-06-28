@@ -51,7 +51,7 @@
 ### Student Suggestion:
 We created an ERD for a fictional brewery:
 
-![ERD]()
+![ERD](https://raw.githubusercontent.com/andydlindsay/flex-apr15-2024/main/m05w11-2/brewery%20and%20roastery.drawio.png)
 
 ### Useful Links
 * [Database Normalization](https://en.wikipedia.org/wiki/Database_normalization)
