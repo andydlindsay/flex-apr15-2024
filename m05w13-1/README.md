@@ -4,90 +4,91 @@
 * reinforce what you already know
 * learning to work as a team
 
-### Pick a project
+### Pick a Project
+- Wiki Map
+- Quiz App
+- Story Creator
+- Decision Maker
+- PasswordKeepR
+- Smart TODO List
+- Resource Wall
+- Buy/Sell Listing Website
+- Schoodle
+- Food Pick-up Ordering
 
-### User Story
-* As a _____, I can _____, because ______
+### User Stories
+- A _user story_ describes how users will interact with your application
+- They have the form: As a ______, I want to ______, because ______.
+- eg. As a _user_, I want to _be able to save posts_, because _I want to review them later_.
+- User stories can also be negated: As a _____, I shouldn't be able to ______, because _____.
+- eg. As a _user_, I shouldn't be able to _edit other users posts_, because _I don't own those posts_.
 
-* As a logged in user, I can see a list of available maps, because I'm interested in things in my area
-* As a logged in user, I can add pins to a map, because I want to share with others
-
-end-to-end testing
-
-/planning/user-stories.md
-
-### Identify the nouns
-* nouns === table
-* ERD
-
-/planning/erd.png
-/planning/erd-stretch.png
+### ERD
+- The user stories provide you with nouns (eg. user, posts, favourites)
+- Use these nouns/entities to build out your database (ie. tables are the nouns from the stories)
 
 ### Routes
-* RESTful routing
+- Once you know the resources that you'll have, write out the routes that you'll need to perform BREAD operations on those resources
+- Remember RESTful conventions (they make it much easier)
 
-GET /all-the-users
-POST /create-a-new-user
+### MVP vs MVD
+- There is a concept in development of an MVP, the Minimum Viable Product
+- An MVP has just enough features to be useful to a user
+- This concept helps streamline the development process and help keep the team on target
+- For mid-terms, we want to focus on the MVD, the Minimum Viable Demo
+- **If you aren't going to demo it, don't build it**
 
-POST /register
-POST /logout
+### Wireframes
+- Draw out the structure of your web pages
+- This will make it much easier to build out these pages later
+- This is also a great opportunity to get input from all of the team members
+- Design matters... however you are a developer, not a designer
+- Get inspiration from websites you visit
 
-Browse  GET   /users
-Read    GET   /users/:id
-Edit    POST  /users/:id
-Add     POST  /users
-Delete  POST  /users/:id/delete
-
-### MVP
-* Minimum Viable Product
-* minimum feature set that a user would get value from
-* @KV Minimum Viable Demo
-* what is the minimum feature set that we can demo in 5 mins
-* if you're not going to show it, don't build it
-
-### Wireframes/Mockups
-
-/planning/wireframes/home.png
-/planning/wireframes/about.png
-
-### User Registration and Full Login
-* don't do it
+### User Login
+- Don't do it
+- Seriously, don't do it
+- We know that you know how to register and login users
 
 ```js
-// localhost:8080/login/2
+// do this instead
 app.get('/login/:id', (req, res) => {
-  // encrypted cookies
-  req.session.userId = req.params.id;
+  // using encrypted cookies
+  req.session.user_id = req.params.id;
 
-  // plaintext cookies
-  res.cookie('userId', req.params.id);
+  // or using plain-text cookies
+  res.cookie('user_id', req.params.id);
 
-  // redirect the user somewhere
+  // send the user somewhere
   res.redirect('/');
 });
 ```
 
-### Tech Stack
-* Back end: Node, Express, Postgres
-* Front end: HTML, CSS, JS, jQuery, bootstrap, tailwind, SCSS
+### Tech Choices
+- We have made all the tech choices for you
+- Back End: Node and Express
+- Front End: HTML, CSS, JS, jQuery, Bootstrap
 
+### The Mid-term Skeleton
+- Use the provided `node-skeleton` as a template for your project
+- This will get you up and running quickly
 
-1. create a .scss file in /styles (layout.scss)
-2. add a Link tag to the html that makes a request for the .css version of the file (layout.css)
-3. automatically compile your .scss into .css and put it in the public directory
-4. express static middleware will serve it up
+### SPA vs Multi-page App
+- These concepts are not mutually exclusive
+- You can choose one or the other or both
 
-### Dividing up the work
-* horizontal => each dev works on their own layer of the app (FE, BE, or DB)
-* vertical => each dev works on a slice of the whole app (FE, BE, and DB)
-* pair programming
+### Git
+- Use Git best practices (ask a mentor for clarification if you need it)
+- Use branches
 
-### MPA and SPA
-* totally up to you
-* not mutually exclusive
+### DO NOT CODE ON MASTER
+- I repeat, do not code on master
+
+### Splitting up the Work
+- Horizontally - each dev working on only FE, BE, or DB
+- Vertically - each dev working on a slice of FE, BE, and DB
+- Pair Programming - working together on the same tasks
 
 ### Communication
-* scrum channel
-
-
-
+- Make sure to communicate with your team members
+- Use Slack, iMessage, Google Hangouts, whatever... just make sure that everyone is on the same page
