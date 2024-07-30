@@ -12,3 +12,4 @@
 * [M05W11 - Database Design](/m05w11-2)
 * [M05W12 - SQL from our Apps](/m05w12-1)
 * [M05W13 - Mid-term Project Kickoff](/m05w13-1)
+* [M07W16 - JSX and Props](/m07w16-1)
