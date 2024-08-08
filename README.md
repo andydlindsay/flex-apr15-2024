@@ -13,3 +13,4 @@
 * [M05W12 - SQL from our Apps](/m05w12-1)
 * [M05W13 - Mid-term Project Kickoff](/m05w13-1)
 * [M07W16 - JSX and Props](/m07w16-1)
+* [M07W17 - State Management and Immutable Update Patterns](/m07w17-2)
