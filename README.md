@@ -14,3 +14,5 @@
 * [M05W13 - Mid-term Project Kickoff](/m05w13-1)
 * [M07W16 - JSX and Props](/m07w16-1)
 * [M07W17 - State Management and Immutable Update Patterns](/m07w17-2)
+* [M08W20 - End-to-End Testing with Cypress](/m08w20-2)
+* [M08W21 - Concluding React](/m08w21-2)
