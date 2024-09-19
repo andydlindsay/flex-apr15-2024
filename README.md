@@ -16,3 +16,4 @@
 * [M07W17 - State Management and Immutable Update Patterns](/m07w17-2)
 * [M08W20 - End-to-End Testing with Cypress](/m08w20-2)
 * [M08W21 - Concluding React](/m08w21-2)
+* [M09W23 - Intro to TypeScript](/m09w23-2)
